@@ -46,13 +46,7 @@ const config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
-        },
-
-        // Shock Colors
-        'shock-red': 'hsl(var(--shock-red))',
-        'shock-blue': 'hsl(var(--shock-blue))',
-        'shock-dark-blue': 'hsl(var(--shock-dark-blue))',
-        'shock-white': 'hsl(var(--shock-white))'
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',
