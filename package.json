@@ -2,13 +2,15 @@
   "name": "monorepo-template",
   "private": true,
   "scripts": {
-    "build:components": "bun run --filter @monorepo-template/components build",
     "build:apps": "bun run --filter './apps/*' build",
+    "build:components": "bun run --filter @monorepo-template/components build",
+    "build:storybook": "bun run --filter @monorepo-template/components build-storybook",
     "dev:components": "bun run --filter @monorepo-template/components dev",
     "dev:apps": "bun run --filter './apps/*' dev",
     "format": "prettier --write",
     "lint": "eslint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "bun run --filter @monorepo-template/components storybook"
   },
   "engines": {
     "node": ">=18"

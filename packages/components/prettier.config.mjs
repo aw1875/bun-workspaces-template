@@ -5,9 +5,11 @@ export default {
   ...baseConfig,
   importOrder: [
     '^react(.*)$',
+    '^@storybook/(.*)$',
     '^@/lib/(.*)$',
     '^(vite(-.*)?|@vitejs/(.*))$',
     '<THIRD_PARTY_MODULES>',
+    'lucide-react',
     '(.*)',
     '^[./]'
   ]
