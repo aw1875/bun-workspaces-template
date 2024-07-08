@@ -8,6 +8,8 @@
     "dev:components": "bun run --filter @monorepo-template/components dev",
     "dev:apps": "bun run --filter './apps/*' dev",
     "format": "prettier --write",
+    "format:apps": "prettier --write './apps/**/*.{js,jsx,ts,tsx,json,md}'",
+    "format:packages": "prettier --write './packages/**/*.{js,jsx,ts,tsx,json,md}'",
     "lint": "eslint",
     "prepare": "husky",
     "storybook": "bun run --filter @monorepo-template/components storybook"
